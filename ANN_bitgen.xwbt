@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=E:\cad-ann\h\ANN.ncd
-OUTFILE=E:\cad-ann\h\ANN.bit
-FAMILY=Spartan3
-PART=xc3s400-5pq208
-WORKINGDIR=E:\cad-ann\h
-LICENSE=WebPack
-USER_INFO=__0_0_0
