@@ -1,0 +1,379 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml ClassType.twx ClassType.ncd -o ClassType.twr ClassType.pcf
+
+Design file:              ClassType.ncd
+Physical constraint file: ClassType.pcf
+Device,package,speed:     xc3s400,pq208,-5 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+array<0>       |indexG<0>      |   24.273|
+array<0>       |indexG<1>      |   24.900|
+array<0>       |indexG<2>      |   24.364|
+array<0>       |indexG<3>      |   23.106|
+array<1>       |indexG<0>      |   24.232|
+array<1>       |indexG<1>      |   24.859|
+array<1>       |indexG<2>      |   24.323|
+array<1>       |indexG<3>      |   23.065|
+array<2>       |indexG<0>      |   23.450|
+array<2>       |indexG<1>      |   24.077|
+array<2>       |indexG<2>      |   23.541|
+array<2>       |indexG<3>      |   22.283|
+array<3>       |indexG<0>      |   23.546|
+array<3>       |indexG<1>      |   24.173|
+array<3>       |indexG<2>      |   23.637|
+array<3>       |indexG<3>      |   22.379|
+array<4>       |indexG<0>      |   23.210|
+array<4>       |indexG<1>      |   23.837|
+array<4>       |indexG<2>      |   23.301|
+array<4>       |indexG<3>      |   22.043|
+array<5>       |indexG<0>      |   23.141|
+array<5>       |indexG<1>      |   23.768|
+array<5>       |indexG<2>      |   23.232|
+array<5>       |indexG<3>      |   21.974|
+array<6>       |indexG<0>      |   22.854|
+array<6>       |indexG<1>      |   23.481|
+array<6>       |indexG<2>      |   22.945|
+array<6>       |indexG<3>      |   21.687|
+array<7>       |indexG<0>      |   22.974|
+array<7>       |indexG<1>      |   23.601|
+array<7>       |indexG<2>      |   23.065|
+array<7>       |indexG<3>      |   21.807|
+array<8>       |indexG<0>      |   23.446|
+array<8>       |indexG<1>      |   24.073|
+array<8>       |indexG<2>      |   23.537|
+array<8>       |indexG<3>      |   22.279|
+array<9>       |indexG<0>      |   23.589|
+array<9>       |indexG<1>      |   24.216|
+array<9>       |indexG<2>      |   23.680|
+array<9>       |indexG<3>      |   22.422|
+array<10>      |indexG<0>      |   23.286|
+array<10>      |indexG<1>      |   23.913|
+array<10>      |indexG<2>      |   23.377|
+array<10>      |indexG<3>      |   22.119|
+array<11>      |indexG<0>      |   23.275|
+array<11>      |indexG<1>      |   23.902|
+array<11>      |indexG<2>      |   23.366|
+array<11>      |indexG<3>      |   22.108|
+array<12>      |indexG<0>      |   23.508|
+array<12>      |indexG<1>      |   24.135|
+array<12>      |indexG<2>      |   23.599|
+array<12>      |indexG<3>      |   22.341|
+array<13>      |indexG<0>      |   22.798|
+array<13>      |indexG<1>      |   23.425|
+array<13>      |indexG<2>      |   22.889|
+array<13>      |indexG<3>      |   21.631|
+array<14>      |indexG<0>      |   22.550|
+array<14>      |indexG<1>      |   23.177|
+array<14>      |indexG<2>      |   22.641|
+array<14>      |indexG<3>      |   21.383|
+array<15>      |indexG<0>      |   23.233|
+array<15>      |indexG<1>      |   23.860|
+array<15>      |indexG<2>      |   23.324|
+array<15>      |indexG<3>      |   22.066|
+array<16>      |indexG<0>      |   22.579|
+array<16>      |indexG<1>      |   23.206|
+array<16>      |indexG<2>      |   22.670|
+array<16>      |indexG<3>      |   21.412|
+array<17>      |indexG<0>      |   22.461|
+array<17>      |indexG<1>      |   23.088|
+array<17>      |indexG<2>      |   22.552|
+array<17>      |indexG<3>      |   21.294|
+array<18>      |indexG<0>      |   22.806|
+array<18>      |indexG<1>      |   23.433|
+array<18>      |indexG<2>      |   22.897|
+array<18>      |indexG<3>      |   21.639|
+array<19>      |indexG<0>      |   22.340|
+array<19>      |indexG<1>      |   22.967|
+array<19>      |indexG<2>      |   22.431|
+array<19>      |indexG<3>      |   21.173|
+array<20>      |indexG<0>      |   22.437|
+array<20>      |indexG<1>      |   23.064|
+array<20>      |indexG<2>      |   22.528|
+array<20>      |indexG<3>      |   21.270|
+array<21>      |indexG<0>      |   22.603|
+array<21>      |indexG<1>      |   23.230|
+array<21>      |indexG<2>      |   22.694|
+array<21>      |indexG<3>      |   21.436|
+array<22>      |indexG<0>      |   23.484|
+array<22>      |indexG<1>      |   24.111|
+array<22>      |indexG<2>      |   23.575|
+array<22>      |indexG<3>      |   22.317|
+array<23>      |indexG<0>      |   22.836|
+array<23>      |indexG<1>      |   23.463|
+array<23>      |indexG<2>      |   22.927|
+array<23>      |indexG<3>      |   21.669|
+array<24>      |indexG<0>      |   22.952|
+array<24>      |indexG<1>      |   23.579|
+array<24>      |indexG<2>      |   23.043|
+array<24>      |indexG<3>      |   21.785|
+array<25>      |indexG<0>      |   23.074|
+array<25>      |indexG<1>      |   23.701|
+array<25>      |indexG<2>      |   23.165|
+array<25>      |indexG<3>      |   21.907|
+array<26>      |indexG<0>      |   22.976|
+array<26>      |indexG<1>      |   23.603|
+array<26>      |indexG<2>      |   23.067|
+array<26>      |indexG<3>      |   21.809|
+array<27>      |indexG<0>      |   23.555|
+array<27>      |indexG<1>      |   24.182|
+array<27>      |indexG<2>      |   23.646|
+array<27>      |indexG<3>      |   22.388|
+array<28>      |indexG<0>      |   24.002|
+array<28>      |indexG<1>      |   24.629|
+array<28>      |indexG<2>      |   24.093|
+array<28>      |indexG<3>      |   22.835|
+array<29>      |indexG<0>      |   22.997|
+array<29>      |indexG<1>      |   23.624|
+array<29>      |indexG<2>      |   23.088|
+array<29>      |indexG<3>      |   21.830|
+array<30>      |indexG<0>      |   22.817|
+array<30>      |indexG<1>      |   23.444|
+array<30>      |indexG<2>      |   22.908|
+array<30>      |indexG<3>      |   21.650|
+array<31>      |indexG<0>      |   22.934|
+array<31>      |indexG<1>      |   23.561|
+array<31>      |indexG<2>      |   23.025|
+array<31>      |indexG<3>      |   21.767|
+array<32>      |indexG<0>      |   24.768|
+array<32>      |indexG<1>      |   25.395|
+array<32>      |indexG<2>      |   24.859|
+array<32>      |indexG<3>      |   23.601|
+array<33>      |indexG<0>      |   24.675|
+array<33>      |indexG<1>      |   25.302|
+array<33>      |indexG<2>      |   24.766|
+array<33>      |indexG<3>      |   23.508|
+array<34>      |indexG<0>      |   24.682|
+array<34>      |indexG<1>      |   25.309|
+array<34>      |indexG<2>      |   24.773|
+array<34>      |indexG<3>      |   23.515|
+array<35>      |indexG<0>      |   24.749|
+array<35>      |indexG<1>      |   25.376|
+array<35>      |indexG<2>      |   24.840|
+array<35>      |indexG<3>      |   23.582|
+array<36>      |indexG<0>      |   24.633|
+array<36>      |indexG<1>      |   25.260|
+array<36>      |indexG<2>      |   24.724|
+array<36>      |indexG<3>      |   23.466|
+array<37>      |indexG<0>      |   24.902|
+array<37>      |indexG<1>      |   25.529|
+array<37>      |indexG<2>      |   24.993|
+array<37>      |indexG<3>      |   23.735|
+array<38>      |indexG<0>      |   24.799|
+array<38>      |indexG<1>      |   25.426|
+array<38>      |indexG<2>      |   24.890|
+array<38>      |indexG<3>      |   23.632|
+array<39>      |indexG<0>      |   24.933|
+array<39>      |indexG<1>      |   25.560|
+array<39>      |indexG<2>      |   25.024|
+array<39>      |indexG<3>      |   23.766|
+array<40>      |indexG<0>      |   25.708|
+array<40>      |indexG<1>      |   26.335|
+array<40>      |indexG<2>      |   25.799|
+array<40>      |indexG<3>      |   24.541|
+array<41>      |indexG<0>      |   25.884|
+array<41>      |indexG<1>      |   26.511|
+array<41>      |indexG<2>      |   25.975|
+array<41>      |indexG<3>      |   24.717|
+array<42>      |indexG<0>      |   25.697|
+array<42>      |indexG<1>      |   26.324|
+array<42>      |indexG<2>      |   25.788|
+array<42>      |indexG<3>      |   24.530|
+array<43>      |indexG<0>      |   25.780|
+array<43>      |indexG<1>      |   26.407|
+array<43>      |indexG<2>      |   25.871|
+array<43>      |indexG<3>      |   24.613|
+array<44>      |indexG<0>      |   24.642|
+array<44>      |indexG<1>      |   25.269|
+array<44>      |indexG<2>      |   24.733|
+array<44>      |indexG<3>      |   23.475|
+array<45>      |indexG<0>      |   26.569|
+array<45>      |indexG<1>      |   27.196|
+array<45>      |indexG<2>      |   26.660|
+array<45>      |indexG<3>      |   25.402|
+array<46>      |indexG<0>      |   24.513|
+array<46>      |indexG<1>      |   25.140|
+array<46>      |indexG<2>      |   24.604|
+array<46>      |indexG<3>      |   23.346|
+array<47>      |indexG<0>      |   25.485|
+array<47>      |indexG<1>      |   26.112|
+array<47>      |indexG<2>      |   25.576|
+array<47>      |indexG<3>      |   24.318|
+array<48>      |indexG<0>      |   23.792|
+array<48>      |indexG<1>      |   24.419|
+array<48>      |indexG<2>      |   23.883|
+array<48>      |indexG<3>      |   22.625|
+array<49>      |indexG<0>      |   24.176|
+array<49>      |indexG<1>      |   24.803|
+array<49>      |indexG<2>      |   24.267|
+array<49>      |indexG<3>      |   23.009|
+array<50>      |indexG<0>      |   24.094|
+array<50>      |indexG<1>      |   24.721|
+array<50>      |indexG<2>      |   24.185|
+array<50>      |indexG<3>      |   22.927|
+array<51>      |indexG<0>      |   24.953|
+array<51>      |indexG<1>      |   25.580|
+array<51>      |indexG<2>      |   25.044|
+array<51>      |indexG<3>      |   23.786|
+array<52>      |indexG<0>      |   23.837|
+array<52>      |indexG<1>      |   24.464|
+array<52>      |indexG<2>      |   23.928|
+array<52>      |indexG<3>      |   22.670|
+array<53>      |indexG<0>      |   23.750|
+array<53>      |indexG<1>      |   24.377|
+array<53>      |indexG<2>      |   23.841|
+array<53>      |indexG<3>      |   22.583|
+array<54>      |indexG<0>      |   23.887|
+array<54>      |indexG<1>      |   24.514|
+array<54>      |indexG<2>      |   23.978|
+array<54>      |indexG<3>      |   22.720|
+array<55>      |indexG<0>      |   23.855|
+array<55>      |indexG<1>      |   24.482|
+array<55>      |indexG<2>      |   23.946|
+array<55>      |indexG<3>      |   22.688|
+array<56>      |indexG<0>      |   24.052|
+array<56>      |indexG<1>      |   24.679|
+array<56>      |indexG<2>      |   24.143|
+array<56>      |indexG<3>      |   22.885|
+array<57>      |indexG<0>      |   24.957|
+array<57>      |indexG<1>      |   25.584|
+array<57>      |indexG<2>      |   25.048|
+array<57>      |indexG<3>      |   23.790|
+array<58>      |indexG<0>      |   23.713|
+array<58>      |indexG<1>      |   24.340|
+array<58>      |indexG<2>      |   23.804|
+array<58>      |indexG<3>      |   22.546|
+array<59>      |indexG<0>      |   23.809|
+array<59>      |indexG<1>      |   24.436|
+array<59>      |indexG<2>      |   23.900|
+array<59>      |indexG<3>      |   22.642|
+array<60>      |indexG<0>      |   24.137|
+array<60>      |indexG<1>      |   24.764|
+array<60>      |indexG<2>      |   24.228|
+array<60>      |indexG<3>      |   22.970|
+array<61>      |indexG<0>      |   24.265|
+array<61>      |indexG<1>      |   24.892|
+array<61>      |indexG<2>      |   24.356|
+array<61>      |indexG<3>      |   23.098|
+array<62>      |indexG<0>      |   23.477|
+array<62>      |indexG<1>      |   24.104|
+array<62>      |indexG<2>      |   23.568|
+array<62>      |indexG<3>      |   22.310|
+array<63>      |indexG<0>      |   26.139|
+array<63>      |indexG<1>      |   26.766|
+array<63>      |indexG<2>      |   26.230|
+array<63>      |indexG<3>      |   24.972|
+array<64>      |indexG<0>      |   18.028|
+array<64>      |indexG<1>      |   18.655|
+array<64>      |indexG<2>      |   18.119|
+array<64>      |indexG<3>      |   16.861|
+array<65>      |indexG<0>      |   17.817|
+array<65>      |indexG<1>      |   18.444|
+array<65>      |indexG<2>      |   17.908|
+array<65>      |indexG<3>      |   16.650|
+array<66>      |indexG<0>      |   17.781|
+array<66>      |indexG<1>      |   18.408|
+array<66>      |indexG<2>      |   17.872|
+array<66>      |indexG<3>      |   16.614|
+array<67>      |indexG<0>      |   17.620|
+array<67>      |indexG<1>      |   18.247|
+array<67>      |indexG<2>      |   17.711|
+array<67>      |indexG<3>      |   16.453|
+array<68>      |indexG<0>      |   17.395|
+array<68>      |indexG<1>      |   18.022|
+array<68>      |indexG<2>      |   17.486|
+array<68>      |indexG<3>      |   16.228|
+array<69>      |indexG<0>      |   17.511|
+array<69>      |indexG<1>      |   18.138|
+array<69>      |indexG<2>      |   17.602|
+array<69>      |indexG<3>      |   16.344|
+array<70>      |indexG<0>      |   17.284|
+array<70>      |indexG<1>      |   17.911|
+array<70>      |indexG<2>      |   17.375|
+array<70>      |indexG<3>      |   16.117|
+array<71>      |indexG<0>      |   17.062|
+array<71>      |indexG<1>      |   17.689|
+array<71>      |indexG<2>      |   17.153|
+array<71>      |indexG<3>      |   15.895|
+array<72>      |indexG<0>      |   17.823|
+array<72>      |indexG<1>      |   18.450|
+array<72>      |indexG<2>      |   17.914|
+array<72>      |indexG<3>      |   16.656|
+array<73>      |indexG<0>      |   17.614|
+array<73>      |indexG<1>      |   18.241|
+array<73>      |indexG<2>      |   17.705|
+array<73>      |indexG<3>      |   16.447|
+array<74>      |indexG<0>      |   17.773|
+array<74>      |indexG<1>      |   18.400|
+array<74>      |indexG<2>      |   17.864|
+array<74>      |indexG<3>      |   16.606|
+array<75>      |indexG<0>      |   17.497|
+array<75>      |indexG<1>      |   18.124|
+array<75>      |indexG<2>      |   17.588|
+array<75>      |indexG<3>      |   16.330|
+array<76>      |indexG<0>      |   17.577|
+array<76>      |indexG<1>      |   18.204|
+array<76>      |indexG<2>      |   17.668|
+array<76>      |indexG<3>      |   16.410|
+array<77>      |indexG<0>      |   17.907|
+array<77>      |indexG<1>      |   18.534|
+array<77>      |indexG<2>      |   17.998|
+array<77>      |indexG<3>      |   16.740|
+array<78>      |indexG<0>      |   17.715|
+array<78>      |indexG<1>      |   18.342|
+array<78>      |indexG<2>      |   17.806|
+array<78>      |indexG<3>      |   16.548|
+array<79>      |indexG<0>      |   18.061|
+array<79>      |indexG<1>      |   18.688|
+array<79>      |indexG<2>      |   18.152|
+array<79>      |indexG<3>      |   16.894|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Jan 18 12:56:31 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4491 MB
+
+
+

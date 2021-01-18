@@ -1,0 +1,160 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: NeuralDataPath.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "NeuralDataPath.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "NeuralDataPath"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-pq208
+
+---- Source Options
+Top Module Name                    : NeuralDataPath
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "ipcore_dir/MULT_IP.v" in library work
+Compiling verilog file "Reg.v" in library work
+Module <MULT_IP> compiled
+ERROR:HDLCompilers:28 - "Reg.v" line 6 'DW_VEC' has not been declared
+ERROR:HDLCompilers:28 - "Reg.v" line 6 'DW_VEC' has not been declared
+Compiling verilog file "mult8_2.v" in library work
+Module <Reg> compiled
+Compiling verilog file "Counter.v" in library work
+Module <Mult8_2> compiled
+Compiling verilog file "Adder.v" in library work
+Module <Counter> compiled
+ERROR:HDLCompilers:28 - "Adder.v" line 9 'DW_VEC' has not been declared
+ERROR:HDLCompilers:28 - "Adder.v" line 10 'DW_VEC' has not been declared
+ERROR:HDLCompilers:28 - "Adder.v" line 13 'DW_VEC' has not been declared
+ERROR:HDLCompilers:28 - "Adder.v" line 17 'DW_VEC' has not been declared
+ERROR:HDLCompilers:28 - "Adder.v" line 18 'DW_VEC' has not been declared
+ERROR:HDLCompilers:28 - "Adder.v" line 22 'DW_VEC' has not been declared
+ERROR:HDLCompilers:28 - "Adder.v" line 23 'DW_VEC' has not been declared
+ERROR:HDLCompilers:28 - "Adder.v" line 28 'DW_VEC' has not been declared
+ERROR:HDLCompilers:28 - "Adder.v" line 29 'DW_VEC' has not been declared
+ERROR:HDLCompilers:28 - "Adder.v" line 33 'DW_VEC' has not been declared
+ERROR:HDLCompilers:28 - "Adder.v" line 34 'DW_VEC' has not been declared
+Compiling verilog file "activation_function.v" in library work
+Module <Adder> compiled
+ERROR:HDLCompilers:28 - "activation_function.v" line 7 'DW_VEC' has not been declared
+ERROR:HDLCompilers:28 - "activation_function.v" line 13 'DW_VEC' has not been declared
+ERROR:HDLCompilers:28 - "activation_function.v" line 16 'DW_VEC' has not been declared
+Compiling verilog file "DataPath.v" in library work
+Module <activation_function> compiled
+Compiling verilog file "Controller.v" in library work
+Module <DataPath> compiled
+Compiling verilog file "ANN.v" in library work
+Module <Controller> compiled
+Compiling verilog file "Neuron10.v" in library work
+Module <ANN> compiled
+Compiling verilog file "NeuralDataPath.v" in library work
+Module <Neuron10> compiled
+ERROR:HDLCompilers:28 - "NeuralDataPath.v" line 8 'clk' has not been declared
+ERROR:HDLCompilers:28 - "NeuralDataPath.v" line 8 'rst' has not been declared
+ERROR:HDLCompilers:28 - "NeuralDataPath.v" line 8 'start' has not been declared
+ERROR:HDLCompilers:28 - "NeuralDataPath.v" line 8 'out' has not been declared
+Module <NeuralDataPath> compiled
+Analysis of file <"NeuralDataPath.prj"> failed.
+--> 
+
+Total memory usage is 4516944 kilobytes
+
+Number of errors   :   20 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

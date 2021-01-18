@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+ANN instance_name (
+    .clk(clk), 
+    .rst(rst), 
+    .start(start), 
+    .result(result)
+    );
+
+

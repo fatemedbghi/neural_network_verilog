@@ -1,0 +1,194 @@
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf 
+vhdtdtfi -lang verilog -prj CAD_ANN -o E:/cad-ann/h/ANN.tfi -lib work E:/cad-ann/h//ANN.v -module ANN -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+bitgen -intstyle ise -f ANN.ut ANN.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ANN.ucf -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf -ucf ANN.ucf 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ANN.ucf -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf -ucf ANN.ucf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim ANN.ngc ANN_synthesis.v 
+xpwr -intstyle ise ANN.ncd ANN.pcf -o ANN.pwr 
+netgen -intstyle ise -s 5  -pcf ANN.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim ANN.ncd ANN_timesim.v 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ANN.ucf -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf -ucf ANN.ucf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim ANN.ngc ANN_synthesis.v 
+xpwr -intstyle ise ANN.ncd ANN.pcf -o ANN.pwr 
+netgen -intstyle ise -s 5  -pcf ANN.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim ANN.ncd ANN_timesim.v 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN_preroute.twx ANN_map.ncd -o ANN_preroute.twr ANN.pcf -ucf ANN.ucf 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim ANN.ngc ANN_synthesis.v 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ANN.ucf -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf -ucf ANN.ucf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim ANN.ngc ANN_synthesis.v 
+bitgen -intstyle ise -f ANN.ut ANN.ncd 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ANN.ucf -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf -ucf ANN.ucf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim ANN.ngc ANN_synthesis.v 
+xpwr -intstyle ise ANN.ncd ANN.pcf -o ANN.pwr 
+netgen -intstyle ise -s 5  -pcf ANN.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim ANN.ncd ANN_timesim.v 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ANN.ucf -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf -ucf ANN.ucf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim ANN.ngc ANN_synthesis.v 
+netgen -intstyle ise -s 5  -pcf ANN.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim ANN.ncd ANN_timesim.v 
+xpwr -intstyle ise ANN.ncd ANN.pcf -o ANN.pwr 
+pin2ucf ANN.ncd -o E:/cad-ann/h/ANN.ucf -r ANN.lck 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ANN.ucf -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf -ucf ANN.ucf 
+bitgen -intstyle ise -f ANN.ut ANN.ncd 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ANN.ucf -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf -ucf ANN.ucf 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ANN.ucf -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf -ucf ANN.ucf 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ANN.ucf -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf -ucf ANN.ucf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim ANN.ngc ANN_synthesis.v 
+xpwr -intstyle ise ANN.ncd ANN.pcf -o ANN.pwr 
+netgen -intstyle ise -s 5  -pcf ANN.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim ANN.ncd ANN_timesim.v 
+pin2ucf ANN.ncd -o E:/cad-ann/h/ANN.ucf -r ANN.lck 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ANN.ucf -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf -ucf ANN.ucf 
+ibiswriter -intstyle ise -truncate 20 ANN.ncd ANN.ibs 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN_preroute.twx ANN_map.ncd -o ANN_preroute.twr ANN.pcf -ucf ANN.ucf 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ANN.ucf -p xc3s400-pq208-5 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -t 1 ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf -ucf ANN.ucf 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 
+xst -intstyle ise -ifn "E:/cad-ann/h/ANN.xst" -ofn "E:/cad-ann/h/ANN.syr" 

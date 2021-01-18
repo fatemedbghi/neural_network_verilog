@@ -1,0 +1,5 @@
+set -tmpdir "E:/cad-ann/h/xst/projnav.tmp"
+set -xsthdpdir "E:/cad-ann/h/xst"
+elaborate
+-ifn ReadInput.prj
+-ifmt mixed
