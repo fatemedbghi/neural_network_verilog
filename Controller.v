@@ -1,6 +1,6 @@
 `timescale 1ns/1ns
 
-module Controller(input wire clk, rst, start, output wire [2:0] offset, output reg read, ld, ready);
+module Controller#(parameter N = 10)(input wire clk, rst, start, output wire [$clog2(N) - 1:0] offset, output reg read, ld, ready);
 
     parameter [1:0] IDLE = 2'b00;
     parameter [1:0] READ_INPUT = 2'b01;
@@ -10,7 +10,7 @@ module Controller(input wire clk, rst, start, output wire [2:0] offset, output r
     reg [1:0] ps, ns;
     reg c_up, init_cnt;
     
-    Counter cnt(c_up, clk, init_cnt, offset);
+    Counter #(.N(N)) cnt(c_up, clk, init_cnt, offset);
 
     always @(*) begin
         case (ps)

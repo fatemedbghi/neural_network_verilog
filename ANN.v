@@ -2,16 +2,16 @@
 
 module ANN # (
 		parameter DW = 8,
-		parameter DW_VEC = 8,
-		parameter O_VEC = 21
-	)(input wire[DW-1:0] value, weight, bias,input wire clk, rst, start,hidden, output wire [DW_VEC-1:0] result);
+		parameter O_VEC = 21,
+		parameter N = 10
+	)(input wire[DW-1:0] value, weight, bias,input wire clk, rst, start,hidden, output wire [DW-1:0] result, output ready);
 
-    wire [2:0] offset;
-    wire read, ld, ready;
+    wire [$clog2(N) - 1:0] offset;
+    wire read, ld;
     DataPath #(.DW(DW),
-					.DW_VEC(DW_VEC),
+					.N(N),
 					.O_VEC(O_VEC)
-			 ) data_path(value, weight, bias,clk, rst, ld, ready,hidden,result);
-    Controller controller(clk, rst, start, ld, ready);
-
+			 ) data_path(value, weight, bias,offset, clk, rst, ld, ready,hidden,result);
+    Controller#(.N(N)) controller(clk, rst, start, ld, ready);
+	 
 endmodule

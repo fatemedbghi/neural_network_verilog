@@ -1,13 +1,13 @@
 `timescale 1ns/1ns
 
-module Counter(input c_up, clk, init, output [2:0] count);
+module Counter#(parameter N = 10)(input c_up, clk, init, output [$clog2(N) - 1:0] count);
 
-    reg [2:0] num;
+    reg [$clog2(N) - 1:0] num;
     
     always @(posedge clk) begin
 
         if (init)
-            num <= 3'b00;
+            num <= 4'b0;
 
         else if (c_up)
             num <= num + 1;
