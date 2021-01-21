@@ -67,6 +67,5 @@ module ClassType
     endgenerate
 	 
     assign indexG = index_l4[0];
-    assign valueG = value_l4[0];
 	 
 endmodule

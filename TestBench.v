@@ -5,7 +5,13 @@ module TestBench();
     reg clk, rst, start, total_counter, accuracy_counter;
 
     wire result, batch_done;
-
+	 
+	 reg [7:0] labels [0:749];
+	 
+	 initial begin
+        $readmemh("test_lable_sm.dat", labels);
+    end
+	 
     always @(batch_done) begin
         if (batch_done) begin
             if (labels[total_counter] == result)

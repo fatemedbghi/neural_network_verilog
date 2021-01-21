@@ -4,7 +4,7 @@ module Reg8
 	(
 		input wire clk, rst, ld, 
 		input [7:0] in, 
-		output [7:0] out
+		output reg [7:0] out
 	);
 
 	always @(posedge clk, posedge rst) begin

@@ -2,7 +2,7 @@
 
 module NeuraNetworkController
     (
-        input start, clk, rst, hidden_layer_1_done, hidden_layer_1_done, hidden_layer_2_done, calculation_done,
+        input start, clk, rst, hidden_layer_1_done, hidden_layer_2_done, calculation_done,
         output reg hidden, ld1, ld2, batch_done, done);
 
     parameter [2:0] IDLE = 3'b000;
@@ -20,9 +20,9 @@ module NeuraNetworkController
         case (ps)
             IDLE: ns = (start == 1) ? GET_INPUT : IDLE;
             GET_INPUT : ns =  (PC = 10'd749) ? IDLE : HIDDEN_LAYER_1;
-            HIDDEN_LAYER_1 : ns = (hidden_layer_1_done = 1'b1) ? HIDDEN_LAYER_2 : HIDDEN_LAYER_1;
-            HIDDEN_LAYER_2 : ns = (hidden_layer_2_done = 1'b1) ? CALCULATION : HIDDEN_LAYER_2;
-            CALCULATION : ns = (calculation_done = 1'b1) ? GET_INPUT : CALCULATION;
+            HIDDEN_LAYER_1 : ns = (hidden_layer_1_done == 1'b1) ? HIDDEN_LAYER_2 : HIDDEN_LAYER_1;
+            HIDDEN_LAYER_2 : ns = (hidden_layer_2_done == 1'b1) ? CALCULATION : HIDDEN_LAYER_2;
+            CALCULATION : ns = (calculation_done == 1'b1) ? GET_INPUT : CALCULATION;
         endcase
     end
 
