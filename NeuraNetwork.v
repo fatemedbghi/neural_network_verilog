@@ -12,7 +12,7 @@ module NeuralNetwork
 	wire [9:0] cnt;
 	
 	test_input_sel750 input_data(cnt, test_data);
-	NeuralNetworkDataPath nnd(clk, rst, start, hidden, ld1, ld2, test_data, state, test_out, ready);
-	NeuraNetworkController nnc(start, clk, rst, ready, hidden, ld1, ld2, batch_done, done);
+	NeuralNetworkDataPath nnd(clk, rst, start_neuron, hidden, ld1, ld2, test_data, state, test_out, ready);
+	NeuraNetworkController nnc(start, clk, rst, ready, start_neuron, hidden, ld1, ld2, batch_done, done);
 	
 endmodule
