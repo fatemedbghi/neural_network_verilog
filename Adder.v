@@ -3,8 +3,7 @@
 
 module Adder # (parameter DW = 8, parameter O_VEC = 21)
 	(
-		input wire [DW*2-1:0] a,
-		input wire [O_VEC-1:0] b,
+		input wire [O_VEC-1:0] a, b,
 		output reg	[O_VEC-1:0] w
 	);
 	
@@ -12,23 +11,23 @@ module Adder # (parameter DW = 8, parameter O_VEC = 21)
 	
 	always @(*) begin
 		
-		if (a[DW*2-1] && b[O_VEC-1]) begin
-			temp = a[DW*2-2:0] + b[O_VEC-2:0];
+		if (a[O_VEC-1] && b[O_VEC-1]) begin
+			temp = a[O_VEC-2:0] + b[O_VEC-2:0];
 			w = {1'b1, temp};
 		end
 		
-		else if (!a[DW*2-1] && !b[O_VEC-1]) begin
-			temp = a[DW*2-2:0] + b[O_VEC-2:0];
+		else if (!a[O_VEC-1] && !b[O_VEC-1]) begin
+			temp = a[O_VEC-2:0] + b[O_VEC-2:0];
 			w = {1'b0, temp};
 		end
 		
 		else begin
-			if (a[DW*2-2:0] > b[O_VEC-2:0]) begin
-				temp = a[DW*2-2:0] - b[O_VEC-2:0];
-				w = {a[DW*2-1], temp};
+			if (a[O_VEC-2:0] > b[O_VEC-2:0]) begin
+				temp = a[O_VEC-2:0] - b[O_VEC-2:0];
+				w = {a[O_VEC-1], temp};
 			end
 			else begin
-				temp = b[O_VEC-2:0] - a[DW*2-2:0];
+				temp = b[O_VEC-2:0] - a[O_VEC-2:0];
 				w = {b[O_VEC-1], temp};
 			end
 		end

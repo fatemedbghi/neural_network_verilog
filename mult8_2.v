@@ -1,6 +1,6 @@
 `timescale 1ns/1ns
 
-module Mult8_2(input signed [7:0]a_in ,b_in , output [15:0]w);
+module Mult8_2(input signed [7:0]a_in ,b_in , output [20:0]w);
 
     wire [7:0] m1, m2, m3, m4;
     wire [11:0] a1, a2, w1;
@@ -18,7 +18,7 @@ module Mult8_2(input signed [7:0]a_in ,b_in , output [15:0]w);
 	assign a1 = {4'b0,m2}+{m1,4'b0};
 	assign a2 = {4'b0,m3}+{8'b0,m4[7:4]};
 	assign w1 = a1 + a2;
-	assign w = {sign,w1[10:0],m4[3:0]};
+	assign w = {sign,4'b0,w1,m4[3:0]};
 
 endmodule
 

@@ -16,7 +16,7 @@ module InputSelection #(parameter N = 10, parameter DW = 8, parameter DW_VEC = N
 		i = 0;
 		for (i = 0; i < N; i = i + 1) begin
       		in[i] = in_vec[i*DW +: DW];
-			we[i] = weight_vec[i*DW +: DW];
+				we[i] = weight_vec[i*DW +: DW];
 		end
 	end
 	
