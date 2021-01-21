@@ -3,10 +3,11 @@
 module TestBench();   
 
     reg clk, rst, start;
-    reg [9:0]total_counter, accuracy_counter;
+    integer total_counter, accuracy_counter;
     wire [7:0] result;
 	wire batch_done, done;
 	reg [7:0] labels [0:749];
+	integer acc;
 
     always @(batch_done) begin
         if (batch_done) begin
@@ -25,8 +26,9 @@ module TestBench();
         clk = 1'b0; 
         rst = 1'b1;
         start = 1'b0; 
-        total_counter = 10'd0;
-        accuracy_counter = 10'd0;
+        total_counter = 0;
+        accuracy_counter = 0;
+        acc = 0;
 
         #20 clk = 1; #20 clk = 0;
         rst = 1'b0;
@@ -38,7 +40,8 @@ module TestBench();
         start = 1'b0;
 
         repeat(100000) #20 clk = ~clk;
-
+        acc = 100*accuracy_counter/total_counter;
+        $display("accuracy = %d%%",acc);
         #100 $stop;
     end
 
