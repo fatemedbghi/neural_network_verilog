@@ -7,7 +7,7 @@ module NeuralNetwork
 		output wire batch_done, done);
 	
 	wire [1:0] state;
-	wire st, hidden, ld1, ld2, ready;
+	wire st, hidden, ld1, ld2, ready, start_neuron;
 	wire [495:0] test_data;
 	wire [9:0] cnt;
 	
