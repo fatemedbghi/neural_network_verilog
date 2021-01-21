@@ -6,8 +6,13 @@ module TestBench();
 
     wire result, batch_done;
 	 
+<<<<<<< HEAD
 	reg [7:0] labels [0:749];
 	 
+=======
+	 reg [7:0] labels [0:749];
+
+>>>>>>> caf5108884dd9bf97c89b50a008c83f1d1c0e7f7
     always @(batch_done) begin
         if (batch_done) begin
             if (labels[total_counter] == result)
