@@ -4,7 +4,9 @@ module NeuraNetworkController
     (
         input wire start, clk, rst, calculation_done,
         output reg [1:0] state,
-        output reg start_neuron, PC_up, hidden, ld1, ld2, batch_done, done
+        output reg start_neuron, 
+        output reg [9:0] PC,
+        output reg hidden, ld1, ld2, batch_done, done
     );
 
     parameter [2:0] IDLE = 3'b000;
@@ -14,7 +16,7 @@ module NeuraNetworkController
     parameter [2:0] CALCULATION = 3'b100;
 
     reg [2:0] ps, ns;
-    reg [9:0] PC;
+    reg PC_up;
     
     always @(*) begin
         case (ps)
