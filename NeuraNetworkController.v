@@ -2,7 +2,7 @@
 
 module NeuraNetworkController
     (
-        input start, clk, rst, calculation_done,
+        input wire start, clk, rst, calculation_done,
         output reg hidden, ld1, ld2, batch_done, done);
 
     parameter [2:0] IDLE = 3'b000;

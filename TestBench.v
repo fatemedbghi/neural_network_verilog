@@ -3,10 +3,9 @@
 module TestBench();   
 
     reg clk, rst, start, total_counter, accuracy_counter;
-
-    wire result, batch_done;
- 
-	reg [7:0] labels [0:749];
+    wire [7:0] result;
+	 wire batch_done, done;
+	 reg [7:0] labels [0:749];
 
     always @(batch_done) begin
         if (batch_done) begin
@@ -15,7 +14,9 @@ module TestBench();
             total_counter <= total_counter + 1;
         end
     end
-
+	
+	NeuralNetwork n_network(clk, rst, start, result, batch_done, done);
+	
 	initial begin
 
         $readmemh("test_lable_sm.dat", labels);

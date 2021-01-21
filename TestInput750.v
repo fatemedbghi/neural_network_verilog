@@ -2,7 +2,7 @@
 
 module test_input_sel750
     (
-        input [9:0] cnt, 
+        input wire [9:0] cnt, 
         output reg [495:0] out
     );
 
