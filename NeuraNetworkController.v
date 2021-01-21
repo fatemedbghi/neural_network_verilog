@@ -1,6 +1,9 @@
 `timescale 1ns / 1ns
 
-module NeuraNetworkController(input start, clk, rst, output reg hidden, ld1, ld2, done);
+module NeuraNetworkController
+    (
+        input start, clk, rst, hidden_layer_1_done, hidden_layer_1_done, hidden_layer_2_done, calculation_done,
+        output reg hidden, ld1, ld2, batch_done, done);
 
     parameter [2:0] IDLE = 3'b000;
     parameter [2:0] GET_INPUT = 3'b001;
@@ -11,7 +14,7 @@ module NeuraNetworkController(input start, clk, rst, output reg hidden, ld1, ld2
 
     reg [1:0] ps, ns;
     reg [9:0] PC;
-    reg PC_up, hidden_layer_1_done, hidden_layer_2_done, calculation_done;
+    reg PC_up;
     
     always @(*) begin
         case (ps)
@@ -24,11 +27,11 @@ module NeuraNetworkController(input start, clk, rst, output reg hidden, ld1, ld2
     end
 
     always @(*) begin
-        {hidden, ld1, ld2, done, PC_up, hidden_layer_1_done, hidden_layer_2_done, calculation_done} = 8'b00000000;
+        {hidden, ld1, ld2, batch_done, done, PC_up, hidden_layer_1_done, hidden_layer_2_done, calculation_done} = 9'b000000000;
         
         case (ps)    
             IDLE: done = 1'b1;
-            GET_INPUT : PC_up = 1'b1;
+            GET_INPUT : {PC_up, batch_done} = 2'b11;
             HIDDEN_LAYER_1 : {hidden, hidden_layer_1_done, ld1} = 3'b111;
             HIDDEN_LAYER_2 : {hidden, hidden_layer_2_done, ld2} = 3'b111;
             CALCULATION : {hidden, calculation_done} = 2'b01;
