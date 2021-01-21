@@ -4,8 +4,8 @@ module TestBench();
 
     reg clk, rst, start, total_counter, accuracy_counter;
     wire [7:0] result;
-	 wire batch_done, done;
-	 reg [7:0] labels [0:749];
+	wire batch_done, done;
+	reg [7:0] labels [0:749];
 
     always @(batch_done) begin
         if (batch_done) begin

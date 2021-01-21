@@ -87,6 +87,6 @@ module NeuralNetworkDataPath
 	
 	ClassType ctype (max_in, test_out);
 	
-	assign ready = ready1 && ready2 && ready3 && ready4 && ready5 && ready6 && ready7 && ready8 && ready9 && ready10 && state[1];
+	assign ready = ready1 && ready2 && ready3 && ready4 && ready5 && ready6 && ready7 && ready8 && ready9 && ready10;
 	
 endmodule

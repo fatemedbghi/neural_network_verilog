@@ -10,9 +10,8 @@ module NeuraNetworkController
     parameter [2:0] HIDDEN_LAYER_1 = 3'b010;
     parameter [2:0] HIDDEN_LAYER_2 = 3'b011;
     parameter [2:0] CALCULATION = 3'b100;
-    parameter [2:0] DONE = 3'b101;
 
-    reg [1:0] ps, ns;
+    reg [2:0] ps, ns;
     reg [9:0] PC;
     reg PC_up;
     
