@@ -3,7 +3,9 @@
 module NeuraNetworkController
     (
         input wire start, clk, rst, calculation_done,
-        output reg start_neuron, hidden, ld1, ld2, batch_done, done);
+        output reg [1:0] state,
+        output reg start_neuron, PC_up, hidden, ld1, ld2, batch_done, done
+    );
 
     parameter [2:0] IDLE = 3'b000;
     parameter [2:0] GET_INPUT = 3'b001;
@@ -13,7 +15,6 @@ module NeuraNetworkController
 
     reg [2:0] ps, ns;
     reg [9:0] PC;
-    reg PC_up;
     
     always @(*) begin
         case (ps)
@@ -26,14 +27,14 @@ module NeuraNetworkController
     end
 
     always @(*) begin
-        {start_neuron, hidden, ld1, ld2, batch_done, done, PC_up} = 7'b0000000;
+        {state, start_neuron, hidden, ld1, ld2, batch_done, done, PC_up} = 9'b000000000;
         
         case (ps)    
             IDLE: done = 1'b1;
             GET_INPUT : {PC_up, batch_done} = 2'b11;
-            HIDDEN_LAYER_1 : {start_neuron, hidden, ld1} = 3'b111;
-            HIDDEN_LAYER_2 : {start_neuron, hidden, ld2} = 3'b111;
-            CALCULATION : {start_neuron, hidden} = 2'b10;
+            HIDDEN_LAYER_1 : {start_neuron, hidden, ld1, state} = 5'b11100;
+            HIDDEN_LAYER_2 : {start_neuron, hidden, ld2, state} = 5'b11101;
+            CALCULATION : {start_neuron, hidden, state} = 4'b1010;
         endcase
     end
 

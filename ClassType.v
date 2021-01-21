@@ -1,14 +1,10 @@
 module C2D 
     (
-        input wire [7:0] X1,
-        input wire [7:0] indexX1,
-        input wire [7:0] X2,
-        input wire [7:0] indexX2,
-        output reg [7:0] Y,
-        output reg [7:0] indexY
+        input wire [7:0] X1, indexX1, X2, indexX2,
+        output reg [7:0] Y, indexY
     );
 
-    always @* begin
+    always @(*) begin
         if (X1 > X2) begin
             Y = X1;
             indexY = indexX1;
