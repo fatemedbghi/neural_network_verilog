@@ -3,8 +3,8 @@
 module NeuralNetwork
 	(
 		input wire clk, rst, start, 
-		output [7:0] test_out, 
-		output batch_done, done);
+		output wire [7:0] test_out, 
+		output wire batch_done, done);
 	
 	wire [1:0] state;
 	wire st, hidden, ld1, ld2, ready;

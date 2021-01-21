@@ -3,7 +3,7 @@
 module Neuron_DataPath #(parameter N = 10, parameter DW = 8, parameter O_VEC = 21)
 	(
 		input wire [DW*N-1:0] inp, w, 
-		input wire [DW*N-1:0] bias, 
+		input wire [DW-1:0] bias, 
 		input wire [$clog2(N) - 1:0]offset, 
 		input wire clk, rst, ld, ready,hidden, 
 		output wire [DW-1:0] result

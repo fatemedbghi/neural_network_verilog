@@ -5,7 +5,7 @@ module NeuralNetworkDataPath
 		input wire clk, rst, start, hidden, ld1, ld2, 
 		input wire [495:0] test_data, 
 		input wire [1:0] state, 
-		output [7:0] test_out, 
+		output wire [7:0] test_out, 
 		output wire ready
 	);
 	
