@@ -1,6 +1,13 @@
 `timescale 1ns / 1ns
 
-module NeuralNetworkDataPath(input wire clk, rst, start, hidden, l1, l2, input wire [495:0] test_data, input wire [1:0] state, output [7:0] test_out, output ready);
+module NeuralNetworkDataPath
+	(
+		input wire clk, rst, start, hidden, ld1, ld2, 
+		input wire [495:0] test_data, 
+		input wire [1:0] state, 
+		output [7:0] test_out, 
+		output ready
+	);
 	
 	wire[4959:0] weight_first_h, weight_second_h;
 	wire[79:0] bias_first_h, bias_second_h, bias_out;
@@ -51,27 +58,27 @@ module NeuralNetworkDataPath(input wire clk, rst, start, hidden, l1, l2, input w
 	ANN # (.DW(8), .O_VEC(21), .N(62)) ann9 (value, weight9, bias9, clk, rst, start, hidden, result9, ready9);
 	ANN # (.DW(8), .O_VEC(21), .N(62)) ann10 (value, weight10, bias10, clk, rst, start, hidden, result10, ready10);
 	
-	Register r1(clk, rst, ld1, result1, reg1);
-	Register r1(clk, rst, ld1, result2, reg2);
-	Register r1(clk, rst, ld1, result3, reg3);
-	Register r1(clk, rst, ld1, result4, reg4);
-	Register r1(clk, rst, ld1, result5, reg5);
-	Register r1(clk, rst, ld1, result6, reg6);
-	Register r1(clk, rst, ld1, result7, reg7);
-	Register r1(clk, rst, ld1, result8, reg8);
-	Register r1(clk, rst, ld1, result9, reg9);
-	Register r1(clk, rst, ld1, result10, reg10);
+	Reg21 r1(clk, rst, ld1, result1, reg1);
+	Reg21 r2(clk, rst, ld1, result2, reg2);
+	Reg21 r3(clk, rst, ld1, result3, reg3);
+	Reg21 r4(clk, rst, ld1, result4, reg4);
+	Reg21 r5(clk, rst, ld1, result5, reg5);
+	Reg21 r6(clk, rst, ld1, result6, reg6);
+	Reg21 r7(clk, rst, ld1, result7, reg7);
+	Reg21 r8(clk, rst, ld1, result8, reg8);
+	Reg21 r9(clk, rst, ld1, result9, reg9);
+	Reg21 r10(clk, rst, ld1, result10, reg10);
 	
-	Register r1(clk, rst, ld2, result1, reg11);
-	Register r1(clk, rst, ld2, result2, reg12);
-	Register r1(clk, rst, ld2, result3, reg13);
-	Register r1(clk, rst, ld2, result4, reg14);
-	Register r1(clk, rst, ld2, result5, reg15);
-	Register r1(clk, rst, ld2, result6, reg16);
-	Register r1(clk, rst, ld2, result7, reg17);
-	Register r1(clk, rst, ld2, result8, reg18);
-	Register r1(clk, rst, ld2, result9, reg19);
-	Register r1(clk, rst, ld2, result10, reg20);
+	Reg21 r11(clk, rst, ld2, result1, reg11);
+	Reg21 r12(clk, rst, ld2, result2, reg12);
+	Reg21 r13(clk, rst, ld2, result3, reg13);
+	Reg21 r14(clk, rst, ld2, result4, reg14);
+	Reg21 r15(clk, rst, ld2, result5, reg15);
+	Reg21 r16(clk, rst, ld2, result6, reg16);
+	Reg21 r17(clk, rst, ld2, result7, reg17);
+	Reg21 r18(clk, rst, ld2, result8, reg18);
+	Reg21 r19(clk, rst, ld2, result9, reg19);
+	Reg21 r20(clk, rst, ld2, result10, reg20);
 	
 	assign ouput_in = {336'b0, reg20, reg19, reg18, reg17, reg16, reg15, reg14, reg13, reg12, reg11,
 		reg10, reg9, reg8, reg7, reg6, reg5, reg4, reg3, reg2, reg1};
