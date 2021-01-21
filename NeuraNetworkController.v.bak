@@ -19,22 +19,22 @@ module NeuraNetworkController
     always @(*) begin
         case (ps)
             IDLE: ns = (start == 1) ? GET_INPUT : IDLE;
-            GET_INPUT : ns =  (PC == 10'd749) ? IDLE : HIDDEN_LAYER_1;
-            HIDDEN_LAYER_1 : ns = (calculation_done == 1'b1) ? HIDDEN_LAYER_2 : HIDDEN_LAYER_1;
+            GET_INPUT : ns =  (PC = 10'd749) ? IDLE : HIDDEN_LAYER_1;
+            HIDDEN_LAYER_1 : ns = (calculation_done == 1'b1) ? HIDDEN_LAYER_2;
             HIDDEN_LAYER_2 : ns = (calculation_done == 1'b1) ? CALCULATION : HIDDEN_LAYER_2;
             CALCULATION : ns = (calculation_done == 1'b1) ? GET_INPUT : CALCULATION;
         endcase
     end
 
     always @(*) begin
-        {hidden, ld1, ld2, batch_done, done, PC_up} = 6'b000000;
+        {hidden, ld1, ld2, batch_done, done, PC_up, calculation_done} = 7'b0000000;
         
         case (ps)    
             IDLE: done = 1'b1;
             GET_INPUT : {PC_up, batch_done} = 2'b11;
             HIDDEN_LAYER_1 : {hidden, ld1} = 2'b11;
             HIDDEN_LAYER_2 : {hidden, ld2} = 2'b11;
-            CALCULATION : hidden = 1'b0;
+            CALCULATION : {hidden, calculation_done} = 2'b01;
         endcase
     end
 
