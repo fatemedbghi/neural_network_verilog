@@ -2,7 +2,8 @@
 
 module TestBench();   
 
-    reg clk, rst, start, total_counter, accuracy_counter;
+    reg clk, rst, start;
+    reg [9:0]total_counter, accuracy_counter;
     wire [7:0] result;
 	wire batch_done, done;
 	reg [7:0] labels [0:749];
@@ -10,8 +11,8 @@ module TestBench();
     always @(batch_done) begin
         if (batch_done) begin
             if (labels[total_counter] == result)
-                accuracy_counter <= accuracy_counter + 1;
-            total_counter <= total_counter + 1;
+                accuracy_counter = accuracy_counter + 1;
+            total_counter = total_counter + 1;
         end
     end
 	
@@ -36,7 +37,7 @@ module TestBench();
         #20 clk = 1; #20 clk = 0;
         start = 1'b0;
 
-        repeat(10000) #20 clk = ~clk;
+        repeat(100000) #20 clk = ~clk;
 
         #100 $stop;
     end
