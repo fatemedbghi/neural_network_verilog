@@ -39,7 +39,7 @@ module TestBench();
         #20 clk = 1; #20 clk = 0;
         start = 1'b0;
 
-        repeat(100000) #20 clk = ~clk;
+        repeat(1000000) #20 clk = ~clk;
         acc = 100*accuracy_counter/total_counter;
         $display("accuracy = %d%%",acc);
         #100 $stop;
