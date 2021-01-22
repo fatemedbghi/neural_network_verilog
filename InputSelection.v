@@ -3,7 +3,7 @@
 module InputSelection #(parameter N = 10, parameter DW = 8, parameter DW_VEC = N*DW)
 	(
 		input wire [DW_VEC-1:0]	in_vec, weight_vec, 
-		input wire [$clog2(N) - 1:0]offset, 
+		input wire [5:0]offset, 
 		output [DW-1:0] inp, weight
 	);
 	

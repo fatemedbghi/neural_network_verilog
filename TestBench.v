@@ -1,13 +1,12 @@
 `timescale 1ns/1ns
 
-module TestBench();   
+module TestBench(output integer acc);   
 
     reg clk, rst, start;
     integer total_counter, accuracy_counter;
     wire [7:0] result;
 	wire batch_done, done;
 	reg [7:0] labels [0:749];
-	integer acc;
 
     always @(batch_done) begin
         if (batch_done) begin

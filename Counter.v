@@ -3,10 +3,10 @@
 module Counter #(parameter N = 10)
     (
         input c_up, clk, init, 
-        output [$clog2(N)-1:0] count
+        output [5:0] count
     );
 
-    reg [$clog2(N)-1:0] num;
+    reg [5:0] num;
     
     always @(posedge clk) begin
 

@@ -1,6 +1,6 @@
 `timescale 1ns/1ns
 
-module Neuron_Controller#(parameter N = 10)(input wire clk, rst, start, output wire [$clog2(N) - 1:0] offset, output reg ld, clr, ready,mult_done);
+module Neuron_Controller#(parameter N = 10)(input wire clk, rst, start, output wire [5:0] offset, output reg ld, clr, ready,mult_done);
 
     parameter [1:0] IDLE = 2'b00;
     parameter [1:0] MLUTIPLY = 2'b01;

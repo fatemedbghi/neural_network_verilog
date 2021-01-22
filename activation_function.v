@@ -13,7 +13,7 @@ module activation_function #
 		if (a[O_VEC-1] == 1'b1)
 			w = 8'b0;
 		else begin
-			if (a[O_VEC-2:8] > 0) 
+			if (a[O_VEC-2:0] > 127) 
 				w = {1'b0, 7'b1111111};
 			else
 				w = {1'b0, a[6:0]};

@@ -9,7 +9,7 @@ module ANN # (parameter DW = 8, parameter O_VEC = 21, parameter N = 10)
 		output wire ready
 	);
 
-    wire [$clog2(N)-1:0] offset;
+    wire [5:0] offset;
     wire ld, clr, mult_done;
 
     Neuron_DataPath #(.DW(DW), .N(N), .O_VEC(O_VEC)) data_path(value, weight, bias,offset, clk, rst, ld, clr, ready, mult_done, hidden,result);
