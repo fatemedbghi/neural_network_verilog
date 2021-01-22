@@ -26,9 +26,13 @@ module ClassType
     wire [7:0] index_l1[0:4];
 
     genvar i;
+	 wire [7:0] j, k;
+	 assign j = 8'b0;
     generate
     for (i=0; i<10; i=i+2) begin : gen_comps_l1
-        C2D cl1 (array[i*8+7:i*8], i, array[(i+1)*8+7:(i+1)*8], (i+1), value_l1[i/2], index_l1[i/2]);
+		  assign k = j + 8'b00000001;
+        C2D cl1 (array[i*8+7:i*8], j, array[(i+1)*8+7:(i+1)*8], k, value_l1[i/2], index_l1[i/2]);
+		  assign j = j + 8'b00000010;
     end
     endgenerate
 

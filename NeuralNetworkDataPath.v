@@ -12,8 +12,8 @@ module NeuralNetworkDataPath
 	wire[4959:0] weight_first_h, weight_second_h;
 	wire[79:0] bias_first_h, bias_second_h, bias_out;
 	wire[1599:0] weight_out;
-	wire [79:0] weight1, weight2, weight3, weight4, weight5, weight6, weight7, weight8, weight9, weight10,
-		bias1, bias2, bias3, bias4, bias5, bias6, bias7, bias8, bias9, bias10,
+	wire [495:0] weight1, weight2, weight3, weight4, weight5, weight6, weight7, weight8, weight9, weight10;
+	wire [7:0] bias1, bias2, bias3, bias4, bias5, bias6, bias7, bias8, bias9, bias10,
 		result1, result2, result3, result4, result5, result6, result7, result8, result9, result10;
 	wire ready1, ready2, ready3, ready4, ready5, ready6, ready7, ready8, ready9, ready10;
 	wire [495:0] value, output_in;

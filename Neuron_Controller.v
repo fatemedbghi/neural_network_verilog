@@ -1,6 +1,6 @@
 `timescale 1ns/1ns
 
-module Neuron_Controller#(parameter N = 10)(input wire clk, rst, start, output wire [$clog2(N) - 1:0] offset, output reg ld, ready);
+module Neuron_Controller#(parameter N = 10)(input wire clk, rst, start, output wire [$clog2(N) - 1:0] offset, output reg ld, clr, ready);
 
     parameter [1:0] IDLE = 2'b00;
     parameter [1:0] CALCULATION = 2'b01;
@@ -15,17 +15,17 @@ module Neuron_Controller#(parameter N = 10)(input wire clk, rst, start, output w
     always @(*) begin
         case (ps)
             IDLE: ns = (start == 1) ? CALCULATION : IDLE;
-            CALCULATION: ns = (offset == 3'b111) ? READY : CALCULATION;
+            CALCULATION: ns = (offset == N-1) ? READY : CALCULATION;
             READY: ns = IDLE;
         endcase
     end
 
     always @(*) begin
-        {c_up, init_cnt, ld, ready} = 4'b0010;
+        {c_up, init_cnt, ld, ready, clr} = 5'b00000;
 
         case (ps)
-            IDLE: init_cnt = 1'b1;
-            CALCULATION: {c_up, ld} = 3'b10;
+            IDLE: {init_cnt,clr} = 2'b11;
+            CALCULATION: {c_up, ld} = 2'b11;
             READY: ready = 1'b1;
         endcase
     end
