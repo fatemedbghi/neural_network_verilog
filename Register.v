@@ -8,12 +8,10 @@ module Reg8
 	);
 
 	always @(posedge clk, posedge rst) begin
-		if (rst) out <= 8'b0;
-
-		else begin
-			if (ld) 
-				out <= in;
-		end
+		if (rst) 
+			out <= 8'b0;
+		else if (ld) 
+			out <= in;
 	end
 
 endmodule
