@@ -10,7 +10,7 @@ module Adder # (parameter DW = 8, parameter O_VEC = 21)
 	reg [O_VEC-2:0]temp;
 	
 	always @(*) begin
-		
+		w = 21'b0;
 		if (a[O_VEC-1] && b[O_VEC-1]) begin
 			temp = a[O_VEC-2:0] + b[O_VEC-2:0];
 			w = {1'b1, temp};
@@ -31,7 +31,6 @@ module Adder # (parameter DW = 8, parameter O_VEC = 21)
 				w = {b[O_VEC-1], temp};
 			end
 		end
-		
 	end
 
 endmodule

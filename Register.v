@@ -19,13 +19,15 @@ endmodule
 module Reg21 #(parameter DW = 8, parameter O_VEC = 21)
     (
         input [O_VEC-1:0]a, 
-        input clk, rst, ld, 
+        input clk, rst, ld, clr, 
         output reg [O_VEC-1:0]w
     );
 
     always @(posedge clk , posedge rst) begin
         if (rst) 
             w <= 21'b0;
+		  else if (clr)
+				w <= 21'b0;
         else if (ld) 
             w <= a;
     end

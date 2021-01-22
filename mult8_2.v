@@ -34,10 +34,10 @@ module Mult4(input signed [3:0]a ,b , output [7:0]w);
     Mult2 mult2_3(a[3:2], b[1:0], m2);
     Mult2 mult2_4(a[1:0], b[1:0], m1);
 
-    assign a1 = {2'b00,m3} + {m4,2'b00};
+   assign a1 = {2'b00,m3} + {m4,2'b00};
 	assign a2 = {2'b00,m2} + {4'b0,m1[3:2]};
 	assign w1 = a1 + a2;
-    assign w = {w1, m1[1:0]};
+   assign w = {w1, m1[1:0]};
     
 endmodule
 
